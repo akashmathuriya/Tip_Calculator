@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tip Calculator</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<header>
+		<h2>Tip Calculator</h2>
+	</header>
+	<body>
+		<div class="box">
+
+			<div class="lft">Bill  Amount: <br> Rs. 
+				<input type="text" id="bill"  style="text-align:center;font-weight:bold;height:23px;">
+			</div>
+			<br>
+		
+			<div class="lft">Tip % :</div>
+			<div class="lft">
+				<button id="decTip" style="height:25px;width:30px;background: #A9A9A9;"><strong>-</strong></button> 
+				<input type="text" id="tip" style="text-align:center;font-weight:bold;height:23px"> 
+				<button id="incTip" style="height:25px;width:30px;background: #A9A9A9;"><strong>+</strong></button>
+			</div>
+			<br>
+		
+			<div class="lft">Number of People:</div>
+			<div class="lft">
+				<button id="decPeople" style="height:25px;width:30px;background: #A9A9A9;"><strong>-</strong></button> 
+				<input type="text" id="numberOfPeople" style="text-align:center;font-weight:bold;height:23px;"> 
+				<button id="incPeople" style="height:25px;width:30px;background: #A9A9A9;"><strong>+</strong></button> &nbsp
+			    
+				<button value="Calculate" id="calculate" style="height:35px;width:95px;background: #A9A9A9;text-transform: uppercase;"><strong>Calculate</strong></button>
+			</div>
+			<br>
+		
+			<div class="remarks"><p> </p></div> 
+		
+			<div class="rt">Tip per person: &nbsp Rs. <span id="tipPerPerson">0</span></div><br>
+			<div class="rt">Total per person: &nbsp Rs. <span id="totalPerPerson">0</span></div><br>
+		</div>
+		<script src="app.js" charset="utf-8"></script>
+	</body>		
+</html>
